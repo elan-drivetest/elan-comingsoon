@@ -1,12 +1,13 @@
 import { LinkPreview } from "@/components/ui/link-preview";
 import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
+import Image from "next/image";
 
 export default function ComingSoon() {
   return (
     <div className="flex justify-center items-center min-h-screen bg-white dark:bg-black">
       <div className="flex flex-col items-center justify-center max-w-3xl mx-auto text-center px-4">
         {/* Logo */}
-        <img 
+        <Image 
           src="/full_logo.svg" 
           alt="Elan Logo" 
           className="w-64 mb-8"
@@ -20,8 +21,7 @@ export default function ComingSoon() {
         </div>
 
         <p className="text-xl md:text-2xl text-neutral-700 dark:text-neutral-300 mb-12">
-          We're working hard to bring you the best drive test rental experience. 
-          Our website is under construction, but we'll be ready to serve you soon!
+          {"We're working hard to bring you the best drive test rental experience. Our website is under construction, but we'll be ready to serve you soon!"}
         </p>
         
         {/* Social Links */}
